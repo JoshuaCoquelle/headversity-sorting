@@ -1,6 +1,7 @@
-import { BaseModel, column, belongsTo, BelongsTo } from '@ioc:Adonis/Lucid/Orm'
+import { BaseModel, column, belongsTo, BelongsTo, hasMany, HasMany } from '@ioc:Adonis/Lucid/Orm'
 import { DateTime } from 'luxon'
 import User from 'App/Models/User'
+import Journal from 'App/Models/Journal'
 
 export default class Pet extends BaseModel {
   @column({ isPrimary: true })
@@ -16,7 +17,7 @@ export default class Pet extends BaseModel {
   public breed?: string
 
   @column()
-  public age: number
+  public age?: number
 
   @column()
   public gender?: string
@@ -32,4 +33,7 @@ export default class Pet extends BaseModel {
 
   @belongsTo(() => User)
   public user: BelongsTo<typeof User>
+
+  @hasMany(() => Journal)
+  public journals: HasMany<typeof Journal>
 }
