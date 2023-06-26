@@ -6,6 +6,9 @@
     "dev": "node ace serve --watch",
     "build": "node ace build --production",
     "start": "node server.js",
+    "seed": "node ace db:seed",
+    "migrate": "node ace migration:run",
+    "migrate:fresh": "node ace migration:fresh",
     "test": "node ace test",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
