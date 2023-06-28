@@ -65,7 +65,7 @@ Hint:
 <br>
 
 ### API Setup Instructions:
-[https://github.com/JoshuaCoquelle/headversity-sorting/blob/main/petversity.api/README.md](petversity.client/README.md)
+[https://github.com/JoshuaCoquelle/headversity-sorting/blob/main/petversity.api/README.md](petversity.api/README.md)
 
 <br>
 
