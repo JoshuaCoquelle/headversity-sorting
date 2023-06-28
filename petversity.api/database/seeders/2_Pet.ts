@@ -3,6 +3,6 @@ import PetFactory from 'Database/factories/PetFactory'
 
 export default class extends BaseSeeder {
   public async run() {
-    await PetFactory.createMany(10)
+    await PetFactory.createMany(5)
   }
 }
